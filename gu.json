@@ -1,0 +1,239 @@
+{
+    "units": [
+        {
+            "id": "Unit.Red.00",
+            "name": "Cat Warrior",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Red" ],
+            "tags": [ "Cat", "Warrior" ],
+            "colors": [ "Red" ],
+            "attack": 4,
+            "defence": 2,
+            "description": "",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [ 
+                {
+                    "cardId": "Card.Common.00",
+                    "copies": 2,
+                    "groupId": 0
+                }
+            ]
+        },
+        {
+            "id": "Unit.Red.01",
+            "name": "Cat Archer",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Red" ],
+            "tags": [ "Cat", "Archer" ],
+            "colors": [ "Red" ],
+            "attack": 1,
+            "defence": 2,
+            "description": "When attacking, deal 1 damage to the defender.",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [ 
+                {
+                    "cardId": "Card.Common.03",
+                    "copies": 2,
+                    "groupId": 0
+                }
+            ]
+        },
+        {
+            "id": "Unit.Red.02",
+            "name": "Cat Rogue",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Red" ],
+            "tags": [ "Cat", "Rogue" ],
+            "colors": [ "Red" ],
+            "attack": 3,
+            "defence": 2,
+            "description": "When attacking, +1 die.",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [ 
+                {
+                    "cardId": "Card.Common.00",
+                    "copies": 2,
+                    "groupId": 0
+                },
+                {
+                    "cardId": "Card.Common.04",
+                    "copies": 2,
+                    "groupId": 1
+                }
+            ]
+        },
+        {
+            "id": "Unit.Red.03",
+            "name": "Bondo",
+            "title": "Captain of the 5th Guard Unit",
+            "rarity": "Uncommon",
+            "cost": [ "Red", "Red", "Unit" ],
+            "tags": [ "Cat", "Warrior" ],
+            "colors": [ "Red" ],
+            "attack": 3,
+            "defence": 3,
+            "description": "When attacking, +2 die.",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [ 
+                {
+                    "cardId": "Card.Common.05",
+                    "copies": 2,
+                    "groupId": 0
+                }
+            ]
+        },
+        {
+            "id": "Unit.Red.04",
+            "name": "Poro",
+            "title": "Grandmaster of Fat Cats",
+            "rarity": "Rare",
+            "cost": [ "Red", "Red", "Any" ],
+            "tags": [ "Cat", "Guard" ],
+            "colors": [ "Red" ],
+            "attack": 3,
+            "defence": 4,
+            "description": "On untap, all guards gain +1 defence this turn.\nWhen defending, remove all enemy dice that rolled 6.",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [ 
+                {
+                    "cardId": "Card.Common.06",
+                    "copies": 2,
+                    "groupId": 0
+                },
+                {
+                    "cardId": "Card.Common.02",
+                    "copies": 2,
+                    "groupId": 0
+                },
+                {
+                    "cardId": "Card.Common.07",
+                    "copies": 2,
+                    "groupId": 1
+                },
+                {
+                    "cardId": "Card.Common.02",
+                    "copies": 2,
+                    "groupId": 1
+                }
+            ]
+        },
+        {
+            "id": "Unit.Red.05",
+            "name": "Cat Guardian",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Red" ],
+            "tags": [ "Cat", "Guard" ],
+            "colors": [ "Red" ],
+            "attack": 1,
+            "defence": 4,
+            "description": "",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "cardId": "Card.Common.02",
+                    "copies": 2,
+                    "groupId": 0
+                }
+            ]
+        },
+        {
+            "id": "Unit.Red.06",
+            "name": "Nok",
+            "title": "The Enraged",
+            "rarity": "Rare",
+            "cost": [ "Red", "Red", "Red" ],
+            "tags": [ "Cat", "Guard" ],
+            "colors": [ "Red" ],
+            "attack": 1,
+            "defence": 4,
+            "description": "",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "cardId": "Card.Common.02",
+                    "copies": 2,
+                    "groupId": 0
+                }
+            ]
+        }
+    ],
+    "cardGroups": [
+        {
+            "id": "Card.Common.00",
+            "name": "Strike",
+            "cost": [],
+            "rarity": "Common",
+            "speed": "Attack",
+            "description": "+2 dice this attack."
+        },
+        {
+            "id": "Card.Common.01",
+            "name": "Burst",
+            "cost": [ "Unit" ],
+            "rarity": "Common",
+            "speed": "Attack",
+            "description": "+3 dice this attack. Draw a card."
+        },
+        {
+            "id": "Card.Common.02",
+            "name": "Hex",
+            "cost": [],
+            "rarity": "Common",
+            "speed": "Combat",
+            "description": "Remove a die from this combat."
+        },
+        {
+            "id": "Card.Common.03",
+            "name": "Piercing Shot",
+            "cost": [ "Unit" ],
+            "rarity": "Common",
+            "speed": "Sorcery",
+            "description": "Deal 1 damage."
+        },
+        {
+            "id": "Card.Common.04",
+            "name": "Battle Roar",
+            "cost": [ "Unit" ],
+            "rarity": "Common",
+            "speed": "Sorcery",
+            "description": "Up to two units gain +1 attack this turn."
+        },
+        {
+            "id": "Card.Common.05",
+            "name": "Ferocious Charge",
+            "cost": [ "Red", "Unit" ],
+            "rarity": "Uncommon",
+            "speed": "Attack",
+            "description": "+2 dice this attack. Up to two untapped units join this attack."
+        },
+        {
+            "id": "Card.Common.06",
+            "name": "Backline to Arms",
+            "cost": [ "Red", "Unit" ],
+            "rarity": "Uncommon",
+            "speed": "Combat",
+            "description": "Up to three units swap their current attack with defence.\n+3 dice this combat."
+        },
+        {
+            "id": "Card.Common.07",
+            "name": "Greater Barrier",
+            "cost": [],
+            "rarity": "Uncommon",
+            "speed": "Defence",
+            "description": "Remove up to 3 dice that rolled 4 or higher."
+        },
+        {
+            "id": "Card.Common.08",
+            "name": "Amok",
+            "cost": [ "Unit", "Unit", "Unit", "Red" ],
+            "rarity": "Rare",
+            "speed": "Sorcery",
+            "description": "Whenever a unit would deal combat damage this turn, it deals twice that much damage instead."
+        }
+
+    ]
+}
