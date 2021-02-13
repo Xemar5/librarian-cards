@@ -1,12 +1,16 @@
 {
+    "settings": {
+        "assetsPath": "./gu-cards/"
+    },
     "units": [
         {
-            "id": "Unit.Red.00",
+            "id": "unit.cat.00",
             "name": "Cat Warrior",
             "title": "",
             "rarity": "Common",
             "cost": [ "Red" ],
             "tags": [ "Cat", "Warrior" ],
+            "asset": "asset.unit.cat.00",
             "palette": {
                 "background": "#cd7f02",
                 "foreground": "#402E32",
@@ -20,19 +24,20 @@
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
                 {
-                    "cardId": "Card.Common.00",
+                    "cardId": "card.common.00",
                     "copies": 2,
                     "groupId": 0
                 }
             ]
         },
         {
-            "id": "Unit.Red.01",
+            "id": "unit.cat.01",
             "name": "Cat Archer",
             "title": "",
             "rarity": "Common",
             "cost": [ "Red" ],
             "tags": [ "Cat", "Archer" ],
+            "asset": "asset.unit.cat.01",
             "palette": {
                 "background": "#cd7f02",
                 "foreground": "#402E32",
@@ -46,19 +51,20 @@
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
                 {
-                    "cardId": "Card.Common.03",
+                    "cardId": "card.common.03",
                     "copies": 2,
                     "groupId": 0
                 }
             ]
         },
         {
-            "id": "Unit.Red.02",
+            "id": "unit.cat.02",
             "name": "Cat Rogue",
             "title": "",
             "rarity": "Common",
             "cost": [ "Red" ],
             "tags": [ "Cat", "Rogue" ],
+            "asset": "asset.unit.cat.02",
             "palette": {
                 "background": "#cd7f02",
                 "foreground": "#402E32",
@@ -72,24 +78,25 @@
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
                 {
-                    "cardId": "Card.Common.00",
+                    "cardId": "card.common.00",
                     "copies": 2,
                     "groupId": 0
                 },
                 {
-                    "cardId": "Card.Common.04",
+                    "cardId": "card.common.04",
                     "copies": 2,
                     "groupId": 1
                 }
             ]
         },
         {
-            "id": "Unit.Red.03",
+            "id": "unit.cat.03",
             "name": "Bondo",
             "title": "Captain of the 5th Guard Unit",
             "rarity": "Uncommon",
             "cost": [ "Red", "Red", "Unit" ],
             "tags": [ "Cat", "Warrior" ],
+            "asset": "asset.unit.cat.03",
             "palette": {
                 "background": "#cd7f02",
                 "foreground": "#402E32",
@@ -103,19 +110,20 @@
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
                 {
-                    "cardId": "Card.Common.05",
+                    "cardId": "card.common.05",
                     "copies": 2,
                     "groupId": 0
                 }
             ]
         },
         {
-            "id": "Unit.Red.04",
+            "id": "unit.cat.04",
             "name": "Poro",
             "title": "Grandmaster of Fat Cats",
             "rarity": "Rare",
             "cost": [ "Red", "Red", "Any" ],
             "tags": [ "Cat", "Guard" ],
+            "asset": "asset.unit.cat.04",
             "palette": {
                 "background": "#cd7f02",
                 "foreground": "#402E32",
@@ -129,34 +137,35 @@
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
                 {
-                    "cardId": "Card.Common.06",
+                    "cardId": "card.common.06",
                     "copies": 2,
                     "groupId": 0
                 },
                 {
-                    "cardId": "Card.Common.02",
+                    "cardId": "card.common.02",
                     "copies": 2,
                     "groupId": 0
                 },
                 {
-                    "cardId": "Card.Common.07",
+                    "cardId": "card.common.07",
                     "copies": 2,
                     "groupId": 1
                 },
                 {
-                    "cardId": "Card.Common.02",
+                    "cardId": "card.common.02",
                     "copies": 2,
                     "groupId": 1
                 }
             ]
         },
         {
-            "id": "Unit.Red.05",
+            "id": "unit.cat.05",
             "name": "Cat Guardian",
             "title": "",
             "rarity": "Common",
             "cost": [ "Red" ],
             "tags": [ "Cat", "Guard" ],
+            "asset": "asset.unit.cat.05",
             "palette": {
                 "background": "#cd7f02",
                 "foreground": "#402E32",
@@ -170,19 +179,20 @@
             "cardGroupSelection": "Choose 1",
             "cardGroups": [
                 {
-                    "cardId": "Card.Common.02",
+                    "cardId": "card.common.02",
                     "copies": 2,
                     "groupId": 0
                 }
             ]
         },
         {
-            "id": "Unit.Red.06",
+            "id": "unit.cat.06",
             "name": "Nok",
             "title": "The Enraged",
             "rarity": "Rare",
             "cost": [ "Red", "Red", "Red" ],
             "tags": [ "Cat", "Guard" ],
+            "asset": "asset.unit.cat.06",
             "palette": {
                 "background": "#cd7f02",
                 "foreground": "#402E32",
@@ -196,16 +206,16 @@
             "cardGroupSelection": "Choose 1",
             "cardGroups": [
                 {
-                    "cardId": "Card.Common.02",
+                    "cardId": "card.common.02",
                     "copies": 2,
                     "groupId": 0
                 }
             ]
         }
     ],
-    "cardGroups": [
+    "cards": [
         {
-            "id": "Card.Common.00",
+            "id": "card.common.00",
             "name": "Strike",
             "cost": [],
             "rarity": "Common",
@@ -213,7 +223,7 @@
             "description": "+2 dice this attack."
         },
         {
-            "id": "Card.Common.01",
+            "id": "card.common.01",
             "name": "Burst",
             "cost": [ "Unit" ],
             "rarity": "Common",
@@ -221,7 +231,7 @@
             "description": "+3 dice this attack. Draw a card."
         },
         {
-            "id": "Card.Common.02",
+            "id": "card.common.02",
             "name": "Hex",
             "cost": [],
             "rarity": "Common",
@@ -229,7 +239,7 @@
             "description": "Remove a die from this combat."
         },
         {
-            "id": "Card.Common.03",
+            "id": "card.common.03",
             "name": "Piercing Shot",
             "cost": [ "Unit" ],
             "rarity": "Common",
@@ -237,7 +247,7 @@
             "description": "Deal 1 damage."
         },
         {
-            "id": "Card.Common.04",
+            "id": "card.common.04",
             "name": "Battle Roar",
             "cost": [ "Unit" ],
             "rarity": "Common",
@@ -245,7 +255,7 @@
             "description": "Up to two units gain +1 attack this turn."
         },
         {
-            "id": "Card.Common.05",
+            "id": "card.common.05",
             "name": "Ferocious Charge",
             "cost": [ "Red", "Unit" ],
             "rarity": "Uncommon",
@@ -253,7 +263,7 @@
             "description": "+2 dice this attack. Up to two untapped units join this attack."
         },
         {
-            "id": "Card.Common.06",
+            "id": "card.common.06",
             "name": "Backline to Arms",
             "cost": [ "Red", "Unit" ],
             "rarity": "Uncommon",
@@ -261,7 +271,7 @@
             "description": "Up to three units swap their current attack with defence.\n+3 dice this combat."
         },
         {
-            "id": "Card.Common.07",
+            "id": "card.common.07",
             "name": "Greater Barrier",
             "cost": [],
             "rarity": "Uncommon",
@@ -269,7 +279,7 @@
             "description": "Remove up to 3 dice that rolled 4 or higher."
         },
         {
-            "id": "Card.Common.08",
+            "id": "card.common.08",
             "name": "Amok",
             "cost": [ "Unit", "Unit", "Unit", "Red" ],
             "rarity": "Rare",
@@ -277,5 +287,42 @@
             "description": "Whenever a unit would deal combat damage this turn, it deals twice that much damage instead."
         }
 
-    ]
+    ],
+    "assets": {
+        "asset.common.rarity.common.background":    "common/RarityBackgroundCommon.png",
+        "asset.common.rarity.common.border":        "common/RarityBackgroundBorderCommon.png",
+        "asset.common.rarity.uncommon.background":  "common/RarityBackgroundUncommon.png",
+        "asset.common.rarity.uncommon.border":      "common/RarityBackgroundBorderUncommon.png",
+        "asset.common.rarity.rare.background":      "common/RarityBackgroundRare.png",
+        "asset.common.rarity.rare.border":          "common/RarityBackgroundBorderRare.png",
+
+        "asset.common.power.background":    "common/PowerBackground.png",
+        "asset.common.power.border":        "common/PowerBackgroundBorder.png",
+
+        "asset.common.element.background":      "common/ElementBackground.png",
+        "asset.common.element.border":          "common/ElementBackgroundBorder.png",
+        "asset.common.element.blue":            "common/ElementBlue.png",
+        "asset.common.element.blue.border":     "common/ElementBorderBlue.png",
+        "asset.common.element.teal":            "common/ElementTeal.png",
+        "asset.common.element.teal.border":     "common/ElementBorderTeal.png",
+        "asset.common.element.red":             "common/ElementRed.png",
+        "asset.common.element.red.border":      "common/ElementBorderRed.png",
+        "asset.common.element.pink":            "common/ElementPink.png",
+        "asset.common.element.pink.border":     "common/ElementBorderPink.png",
+        "asset.common.element.yellow":          "common/ElementYellow.png",
+        "asset.common.element.yellow.border":   "common/ElementBorderYellow.png",
+        "asset.common.element.green":           "common/ElementGreen.png",
+        "asset.common.element.green.border":    "common/ElementBorderGreen.png",
+
+        "asset.common.description.background":  "common/DescriptionBackground.png",
+        "asset.common.background.shine":        "common/Shine.png",
+        
+        "asset.unit.cat.00": "units/TemplateUnit.png",
+        "asset.unit.cat.01": "units/TemplateUnit.png",
+        "asset.unit.cat.02": "units/TemplateUnit.png",
+        "asset.unit.cat.03": "units/TemplateUnit.png",
+        "asset.unit.cat.04": "units/TemplateUnit.png",
+        "asset.unit.cat.05": "units/TemplateUnit.png",
+        "asset.unit.cat.06": "units/TemplateUnit.png"
+    }
 }
