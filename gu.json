@@ -7,9 +7,15 @@
             "rarity": "Common",
             "cost": [ "Red" ],
             "tags": [ "Cat", "Warrior" ],
-            "colors": [ "Red" ],
-            "attack": 4,
-            "defence": 2,
+            "palette": {
+                "background": "#cd7f02",
+                "foreground": "#402E32",
+                "borders": "#cd7f02",
+                "name": "#402E32",
+                "description": "#DFE0DF",
+                "elements": "#cd7f02"
+            },
+            "power": 4,
             "description": "",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
@@ -27,9 +33,15 @@
             "rarity": "Common",
             "cost": [ "Red" ],
             "tags": [ "Cat", "Archer" ],
-            "colors": [ "Red" ],
-            "attack": 1,
-            "defence": 2,
+            "palette": {
+                "background": "#cd7f02",
+                "foreground": "#402E32",
+                "borders": "#cd7f02",
+                "name": "#402E32",
+                "description": "#DFE0DF",
+                "elements": "#cd7f02"
+            },
+            "power": 1,
             "description": "When attacking, deal 1 damage to the defender.",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
@@ -47,9 +59,15 @@
             "rarity": "Common",
             "cost": [ "Red" ],
             "tags": [ "Cat", "Rogue" ],
-            "colors": [ "Red" ],
-            "attack": 3,
-            "defence": 2,
+            "palette": {
+                "background": "#cd7f02",
+                "foreground": "#402E32",
+                "borders": "#cd7f02",
+                "name": "#402E32",
+                "description": "#DFE0DF",
+                "elements": "#cd7f02"
+            },
+            "power": 3,
             "description": "When attacking, +1 die.",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
@@ -72,9 +90,15 @@
             "rarity": "Uncommon",
             "cost": [ "Red", "Red", "Unit" ],
             "tags": [ "Cat", "Warrior" ],
-            "colors": [ "Red" ],
-            "attack": 3,
-            "defence": 3,
+            "palette": {
+                "background": "#cd7f02",
+                "foreground": "#402E32",
+                "borders": "#cd7f02",
+                "name": "#402E32",
+                "description": "#DFE0DF",
+                "elements": "#cd7f02"
+            },
+            "power": 3,
             "description": "When attacking, +2 die.",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
@@ -92,9 +116,15 @@
             "rarity": "Rare",
             "cost": [ "Red", "Red", "Any" ],
             "tags": [ "Cat", "Guard" ],
-            "colors": [ "Red" ],
-            "attack": 3,
-            "defence": 4,
+            "palette": {
+                "background": "#cd7f02",
+                "foreground": "#402E32",
+                "borders": "#cd7f02",
+                "name": "#402E32",
+                "description": "#DFE0DF",
+                "elements": "#cd7f02"
+            },
+            "power": 3,
             "description": "On untap, all guards gain +1 defence this turn.\nWhen defending, remove all enemy dice that rolled 6.",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
@@ -127,9 +157,15 @@
             "rarity": "Common",
             "cost": [ "Red" ],
             "tags": [ "Cat", "Guard" ],
-            "colors": [ "Red" ],
-            "attack": 1,
-            "defence": 4,
+            "palette": {
+                "background": "#cd7f02",
+                "foreground": "#402E32",
+                "borders": "#cd7f02",
+                "name": "#402E32",
+                "description": "#DFE0DF",
+                "elements": "#cd7f02"
+            },
+            "power": 1,
             "description": "",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [
@@ -147,9 +183,15 @@
             "rarity": "Rare",
             "cost": [ "Red", "Red", "Red" ],
             "tags": [ "Cat", "Guard" ],
-            "colors": [ "Red" ],
-            "attack": 1,
-            "defence": 4,
+            "palette": {
+                "background": "#cd7f02",
+                "foreground": "#402E32",
+                "borders": "#cd7f02",
+                "name": "#402E32",
+                "description": "#DFE0DF",
+                "elements": "#cd7f02"
+            },
+            "power": 1,
             "description": "",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [
@@ -167,7 +209,7 @@
             "name": "Strike",
             "cost": [],
             "rarity": "Common",
-            "speed": "Attack",
+            "speed": "power",
             "description": "+2 dice this attack."
         },
         {
@@ -175,7 +217,7 @@
             "name": "Burst",
             "cost": [ "Unit" ],
             "rarity": "Common",
-            "speed": "Attack",
+            "speed": "power",
             "description": "+3 dice this attack. Draw a card."
         },
         {
@@ -207,7 +249,7 @@
             "name": "Ferocious Charge",
             "cost": [ "Red", "Unit" ],
             "rarity": "Uncommon",
-            "speed": "Attack",
+            "speed": "power",
             "description": "+2 dice this attack. Up to two untapped units join this attack."
         },
         {
