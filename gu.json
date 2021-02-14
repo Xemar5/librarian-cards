@@ -1,6 +1,6 @@
 {
     "settings": {
-        "assetsPath": "Assets/Sprites/UnitCardComponents/"
+        "assetsPath": "Assets/Sprites/"
     },
     "units": [
         {
@@ -97,7 +97,7 @@
             "name": "Poro",
             "title": ", Grandmaster of Fat Cats",
             "rarity": "Rare",
-            "cost": [ "Red", "Red" ],
+            "cost": [ "Yellow", "Teal" ],
             "tags": [ "Cat", "Guard" ],
             "asset": "asset.unit.cat.04",
             "palette": "palette.unit.sunrise",
