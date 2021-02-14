@@ -1,6 +1,6 @@
 {
     "settings": {
-        "assetsPath": "./gu-cards/"
+        "assetsPath": "Assets/Sprites/UnitCardComponents/"
     },
     "units": [
         {
@@ -11,16 +11,10 @@
             "cost": [ "Red" ],
             "tags": [ "Cat", "Warrior" ],
             "asset": "asset.unit.cat.00",
-            "palette": {
-                "background": "#cd7f02",
-                "foreground": "#402E32",
-                "borders": "#cd7f02",
-                "name": "#402E32",
-                "description": "#DFE0DF",
-                "elements": "#cd7f02"
-            },
+            "palette": "palette.unit.sunrise",
             "power": 4,
             "description": "",
+            "flavor": "Not the sharpest tool int the shed.",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
                 {
@@ -38,16 +32,10 @@
             "cost": [ "Red" ],
             "tags": [ "Cat", "Archer" ],
             "asset": "asset.unit.cat.01",
-            "palette": {
-                "background": "#cd7f02",
-                "foreground": "#402E32",
-                "borders": "#cd7f02",
-                "name": "#402E32",
-                "description": "#DFE0DF",
-                "elements": "#cd7f02"
-            },
+            "palette": "palette.unit.breeze",
             "power": 1,
             "description": "When attacking, deal 1 damage to the defender.",
+            "flavor": "Does pif and paf.",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
                 {
@@ -65,16 +53,10 @@
             "cost": [ "Red" ],
             "tags": [ "Cat", "Rogue" ],
             "asset": "asset.unit.cat.02",
-            "palette": {
-                "background": "#cd7f02",
-                "foreground": "#402E32",
-                "borders": "#cd7f02",
-                "name": "#402E32",
-                "description": "#DFE0DF",
-                "elements": "#cd7f02"
-            },
+            "palette": "palette.unit.sunrise",
             "power": 3,
             "description": "When attacking, +1 die.",
+            "flavor": "",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
                 {
@@ -92,21 +74,15 @@
         {
             "id": "unit.cat.03",
             "name": "Bondo",
-            "title": "Captain of the 5th Guard Unit",
+            "title": ", Captain of the 5th Guard Unit",
             "rarity": "Uncommon",
-            "cost": [ "Red", "Red", "Unit" ],
+            "cost": [ "Red", "Red" ],
             "tags": [ "Cat", "Warrior" ],
             "asset": "asset.unit.cat.03",
-            "palette": {
-                "background": "#cd7f02",
-                "foreground": "#402E32",
-                "borders": "#cd7f02",
-                "name": "#402E32",
-                "description": "#DFE0DF",
-                "elements": "#cd7f02"
-            },
+            "palette": "palette.unit.sunrise",
             "power": 3,
             "description": "When attacking, +2 die.",
+            "flavor": "",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
                 {
@@ -119,21 +95,15 @@
         {
             "id": "unit.cat.04",
             "name": "Poro",
-            "title": "Grandmaster of Fat Cats",
+            "title": ", Grandmaster of Fat Cats",
             "rarity": "Rare",
-            "cost": [ "Red", "Red", "Any" ],
+            "cost": [ "Red", "Red" ],
             "tags": [ "Cat", "Guard" ],
             "asset": "asset.unit.cat.04",
-            "palette": {
-                "background": "#cd7f02",
-                "foreground": "#402E32",
-                "borders": "#cd7f02",
-                "name": "#402E32",
-                "description": "#DFE0DF",
-                "elements": "#cd7f02"
-            },
+            "palette": "palette.unit.sunrise",
             "power": 3,
             "description": "On untap, all guards gain +1 defence this turn.\nWhen defending, remove all enemy dice that rolled 6.",
+            "flavor": "",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
                 {
@@ -166,16 +136,10 @@
             "cost": [ "Red" ],
             "tags": [ "Cat", "Guard" ],
             "asset": "asset.unit.cat.05",
-            "palette": {
-                "background": "#cd7f02",
-                "foreground": "#402E32",
-                "borders": "#cd7f02",
-                "name": "#402E32",
-                "description": "#DFE0DF",
-                "elements": "#cd7f02"
-            },
+            "palette": "palette.unit.sunrise",
             "power": 1,
             "description": "",
+            "flavor": "Guards the meow.",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [
                 {
@@ -188,21 +152,15 @@
         {
             "id": "unit.cat.06",
             "name": "Nok",
-            "title": "The Enraged",
+            "title": " The Enraged",
             "rarity": "Rare",
             "cost": [ "Red", "Red", "Red" ],
             "tags": [ "Cat", "Guard" ],
             "asset": "asset.unit.cat.06",
-            "palette": {
-                "background": "#cd7f02",
-                "foreground": "#402E32",
-                "borders": "#cd7f02",
-                "name": "#402E32",
-                "description": "#DFE0DF",
-                "elements": "#cd7f02"
-            },
+            "palette": "palette.unit.sunrise",
             "power": 1,
             "description": "",
+            "flavor": "Big cat, big paw.",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [
                 {
@@ -288,7 +246,46 @@
         }
 
     ],
+    "palettes": [
+        {
+            "id": "palette.unit.sunrise",
+            "background": "#cd7f02",
+            "shine": "#cd5d02",
+            "border": "#000000",
+            "name": "#402E32",
+            "title": "#402E32",
+            "tag": "#402E32",
+            "description": "#DFE0DF",
+            "descriptionBackground": "#402E32",
+            "descriptionFlavor": "#DFE0DF",
+            "attribute": "#cd7f02",
+            "attributeBackground": "#402E32",
+            "attributeOutline": "#cd7f02",
+            "elementOutline": "#DFE0DF"
+        },
+        {
+            "id": "palette.unit.breeze",
+            "background": "#00B4FF",
+            "shine": "#0091ff",
+            "border": "#000000",
+            "name": "#3D4856",
+            "title": "#3D4856",
+            "tag": "#3D4856",
+            "description": "#EEE8A9",
+            "descriptionBackground": "#3D4856",
+            "descriptionFlavor": "#EEE8A9",
+            "attribute": "#00B4FF",
+            "attributeBackground": "#3D4856",
+            "attributeOutline": "#00B4FF",
+            "elementOutline": "#EEE8A9"
+        }
+    ],
     "assets": {
+        "asset.common.background":              "common/Background.png",
+        "asset.common.background.shine":        "common/Shine.png",
+        "asset.common.background.border":       "common/Border.png",
+        "asset.common.description.background":  "common/DescriptionBackground.png",
+        
         "asset.common.rarity.common.background":    "common/RarityBackgroundCommon.png",
         "asset.common.rarity.common.border":        "common/RarityBackgroundBorderCommon.png",
         "asset.common.rarity.uncommon.background":  "common/RarityBackgroundUncommon.png",
@@ -314,9 +311,6 @@
         "asset.common.element.green":           "common/ElementGreen.png",
         "asset.common.element.green.border":    "common/ElementBorderGreen.png",
 
-        "asset.common.description.background":  "common/DescriptionBackground.png",
-        "asset.common.background.shine":        "common/Shine.png",
-        
         "asset.unit.cat.00": "units/TemplateUnit.png",
         "asset.unit.cat.01": "units/TemplateUnit.png",
         "asset.unit.cat.02": "units/TemplateUnit.png",
