@@ -11,14 +11,14 @@
             "cost": [ "Red" ],
             "tags": [ "Cat", "Warrior" ],
             "asset": "asset.unit.cat.00",
-            "palette": "palette.unit.sunrise",
+            "palette": "palette.sunrise",
             "power": 4,
             "description": "",
             "flavor": "Not the sharpest tool int the shed.",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
                 {
-                    "cardId": "card.common.00",
+                    "cardId": "spell.common.00",
                     "copies": 2,
                     "groupId": 0
                 }
@@ -32,14 +32,14 @@
             "cost": [ "Red" ],
             "tags": [ "Cat", "Archer" ],
             "asset": "asset.unit.cat.01",
-            "palette": "palette.unit.breeze",
+            "palette": "palette.breeze",
             "power": 1,
             "description": "When attacking, deal 1 damage to the defender.",
             "flavor": "Does pif and paf.",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
                 {
-                    "cardId": "card.common.03",
+                    "cardId": "spell.common.03",
                     "copies": 2,
                     "groupId": 0
                 }
@@ -50,22 +50,22 @@
             "name": "Cat Rogue",
             "title": "",
             "rarity": "Common",
-            "cost": [ "Red" ],
+            "cost": [ "Red", "Tap" ],
             "tags": [ "Cat", "Rogue" ],
             "asset": "asset.unit.cat.02",
-            "palette": "palette.unit.sunrise",
+            "palette": "palette.sunrise",
             "power": 3,
             "description": "When attacking, +1 die.",
             "flavor": "",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
                 {
-                    "cardId": "card.common.00",
+                    "cardId": "spell.common.00",
                     "copies": 2,
                     "groupId": 0
                 },
                 {
-                    "cardId": "card.common.04",
+                    "cardId": "spell.common.04",
                     "copies": 2,
                     "groupId": 1
                 }
@@ -79,14 +79,14 @@
             "cost": [ "Red", "Red" ],
             "tags": [ "Cat", "Warrior" ],
             "asset": "asset.unit.cat.03",
-            "palette": "palette.unit.sunrise",
+            "palette": "palette.sunrise",
             "power": 3,
             "description": "When attacking, +2 die.",
             "flavor": "",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
                 {
-                    "cardId": "card.common.05",
+                    "cardId": "spell.common.05",
                     "copies": 2,
                     "groupId": 0
                 }
@@ -100,29 +100,29 @@
             "cost": [ "Yellow", "Teal" ],
             "tags": [ "Cat", "Guard" ],
             "asset": "asset.unit.cat.04",
-            "palette": "palette.unit.sunrise",
+            "palette": "palette.sunrise",
             "power": 3,
             "description": "On untap, all guards gain +1 defence this turn.\nWhen defending, remove all enemy dice that rolled 6.",
             "flavor": "",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
                 {
-                    "cardId": "card.common.06",
+                    "cardId": "spell.common.06",
                     "copies": 2,
                     "groupId": 0
                 },
                 {
-                    "cardId": "card.common.02",
+                    "cardId": "spell.common.02",
                     "copies": 2,
                     "groupId": 0
                 },
                 {
-                    "cardId": "card.common.07",
+                    "cardId": "spell.common.07",
                     "copies": 2,
                     "groupId": 1
                 },
                 {
-                    "cardId": "card.common.02",
+                    "cardId": "spell.common.02",
                     "copies": 2,
                     "groupId": 1
                 }
@@ -136,14 +136,14 @@
             "cost": [ "Red" ],
             "tags": [ "Cat", "Guard" ],
             "asset": "asset.unit.cat.05",
-            "palette": "palette.unit.sunrise",
+            "palette": "palette.sunrise",
             "power": 1,
             "description": "",
             "flavor": "Guards the meow.",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [
                 {
-                    "cardId": "card.common.02",
+                    "cardId": "spell.common.02",
                     "copies": 2,
                     "groupId": 0
                 }
@@ -157,104 +157,132 @@
             "cost": [ "Red", "Red", "Red" ],
             "tags": [ "Cat", "Guard" ],
             "asset": "asset.unit.cat.06",
-            "palette": "palette.unit.sunrise",
+            "palette": "palette.sunrise",
             "power": 1,
             "description": "",
             "flavor": "Big cat, big paw.",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [
                 {
-                    "cardId": "card.common.02",
+                    "cardId": "spell.common.02",
                     "copies": 2,
                     "groupId": 0
                 }
             ]
         }
     ],
-    "cards": [
+    "spells": [
         {
-            "id": "card.common.00",
+            "id": "spell.common.00",
             "name": "Strike",
-            "cost": [],
             "rarity": "Common",
-            "speed": "power",
+            "speed": "Attack",
+            "cost": [],
+            "tags": [ "Mele" ],
+            "asset": "asset.spell.common.00",
+            "palette": "palette.sunrise",
             "description": "+2 dice this attack."
         },
         {
-            "id": "card.common.01",
+            "id": "spell.common.01",
             "name": "Burst",
-            "cost": [ "Unit" ],
             "rarity": "Common",
-            "speed": "power",
+            "speed": "Attack",
+            "cost": [ "Tap" ],
+            "tags": [ "Mele" ],
+            "asset": "asset.spell.common.01",
+            "palette": "palette.sunrise",
             "description": "+3 dice this attack. Draw a card."
         },
         {
-            "id": "card.common.02",
+            "id": "spell.common.02",
             "name": "Hex",
-            "cost": [],
             "rarity": "Common",
             "speed": "Combat",
+            "cost": [],
+            "tags": [ "Arcane" ],
+            "asset": "asset.spell.common.02",
+            "palette": "palette.sunrise",
             "description": "Remove a die from this combat."
         },
         {
-            "id": "card.common.03",
+            "id": "spell.common.03",
             "name": "Piercing Shot",
-            "cost": [ "Unit" ],
             "rarity": "Common",
             "speed": "Sorcery",
+            "cost": [ "Tap" ],
+            "tags": [ "Ranged" ],
+            "asset": "asset.spell.common.03",
+            "palette": "palette.sunrise",
             "description": "Deal 1 damage."
         },
         {
-            "id": "card.common.04",
+            "id": "spell.common.04",
             "name": "Battle Roar",
-            "cost": [ "Unit" ],
             "rarity": "Common",
             "speed": "Sorcery",
+            "cost": [ "Tap" ],
+            "tags": [ "Buff" ],
+            "asset": "asset.spell.common.04",
+            "palette": "palette.sunrise",
             "description": "Up to two units gain +1 attack this turn."
         },
         {
-            "id": "card.common.05",
+            "id": "spell.common.05",
             "name": "Ferocious Charge",
-            "cost": [ "Red", "Unit" ],
             "rarity": "Uncommon",
-            "speed": "power",
+            "speed": "Attack",
+            "cost": [ "Red", "Tap" ],
+            "tags": [ "Mele", "Buff" ],
+            "asset": "asset.spell.common.05",
+            "palette": "palette.sunrise",
             "description": "+2 dice this attack. Up to two untapped units join this attack."
         },
         {
-            "id": "card.common.06",
+            "id": "spell.common.06",
             "name": "Backline to Arms",
-            "cost": [ "Red", "Unit" ],
             "rarity": "Uncommon",
             "speed": "Combat",
+            "cost": [ "Red", "Tap" ],
+            "tags": [ "Mele", "Buff" ],
+            "asset": "asset.spell.common.06",
+            "palette": "palette.sunrise",
             "description": "Up to three units swap their current attack with defence.\n+3 dice this combat."
         },
         {
-            "id": "card.common.07",
+            "id": "spell.common.07",
             "name": "Greater Barrier",
-            "cost": [],
             "rarity": "Uncommon",
             "speed": "Defence",
+            "cost": [],
+            "tags": [ "Arcane" ],
+            "asset": "asset.spell.common.07",
+            "palette": "palette.sunrise",
             "description": "Remove up to 3 dice that rolled 4 or higher."
         },
         {
-            "id": "card.common.08",
+            "id": "spell.common.08",
             "name": "Amok",
-            "cost": [ "Unit", "Unit", "Unit", "Red" ],
             "rarity": "Rare",
             "speed": "Sorcery",
+            "cost": [ "Tap", "Tap", "Tap", "Red" ],
+            "tags": [ "Buff" ],
+            "asset": "asset.spell.common.08",
+            "palette": "palette.sunrise",
             "description": "Whenever a unit would deal combat damage this turn, it deals twice that much damage instead."
         }
 
     ],
     "palettes": [
         {
-            "id": "palette.unit.sunrise",
+            "id": "palette.sunrise",
             "background": "#cd7f02",
             "shine": "#cd5d02",
             "border": "#000000",
             "name": "#402E32",
             "title": "#402E32",
             "tag": "#402E32",
+            "speed": "#402E32",
             "description": "#DFE0DF",
             "descriptionBackground": "#402E32",
             "descriptionFlavor": "#DFE0DF",
@@ -264,13 +292,14 @@
             "elementOutline": "#DFE0DF"
         },
         {
-            "id": "palette.unit.breeze",
+            "id": "palette.breeze",
             "background": "#00B4FF",
             "shine": "#0091ff",
             "border": "#000000",
             "name": "#3D4856",
             "title": "#3D4856",
             "tag": "#3D4856",
+            "speed": "#3D4856",
             "description": "#EEE8A9",
             "descriptionBackground": "#3D4856",
             "descriptionFlavor": "#EEE8A9",
@@ -310,6 +339,11 @@
         "asset.common.element.yellow.border":   "common/ElementBorderYellow.png",
         "asset.common.element.green":           "common/ElementGreen.png",
         "asset.common.element.green.border":    "common/ElementBorderGreen.png",
+        "asset.common.element.any":             "common/ElementAny.png",
+        "asset.common.element.any.border":      "common/ElementBorderAny.png",
+
+        "asset.common.element.tap":             "common/Tap.png",
+        "asset.common.element.tap.border":      "common/TapBorder.png",
 
         "asset.unit.cat.00": "units/TemplateUnit.png",
         "asset.unit.cat.01": "units/TemplateUnit.png",
@@ -317,6 +351,17 @@
         "asset.unit.cat.03": "units/TemplateUnit.png",
         "asset.unit.cat.04": "units/TemplateUnit.png",
         "asset.unit.cat.05": "units/TemplateUnit.png",
-        "asset.unit.cat.06": "units/TemplateUnit.png"
+        "asset.unit.cat.06": "units/TemplateUnit.png",
+        
+        "asset.spell.common.00": "units/TemplateUnit.png",
+        "asset.spell.common.01": "units/TemplateUnit.png",
+        "asset.spell.common.02": "units/TemplateUnit.png",
+        "asset.spell.common.03": "units/TemplateUnit.png",
+        "asset.spell.common.04": "units/TemplateUnit.png",
+        "asset.spell.common.05": "units/TemplateUnit.png",
+        "asset.spell.common.06": "units/TemplateUnit.png",
+        "asset.spell.common.07": "units/TemplateUnit.png",
+        "asset.spell.common.08": "units/TemplateUnit.png"
+
     }
 }
