@@ -50,7 +50,7 @@
             "name": "Cat Rogue",
             "title": "",
             "rarity": "Common",
-            "cost": [ "Red", "Tap" ],
+            "cost": [ "Red", "Any" ],
             "tags": [ "Cat", "Rogue" ],
             "asset": "asset.unit.cat.02",
             "palette": "palette.sunrise",
@@ -181,6 +181,7 @@
             "tags": [ "Mele" ],
             "asset": "asset.spell.common.00",
             "palette": "palette.sunrise",
+            "flavor": "",
             "description": "+2 dice this attack."
         },
         {
@@ -192,6 +193,7 @@
             "tags": [ "Mele" ],
             "asset": "asset.spell.common.01",
             "palette": "palette.sunrise",
+            "flavor": "",
             "description": "+3 dice this attack. Draw a card."
         },
         {
@@ -203,6 +205,7 @@
             "tags": [ "Arcane" ],
             "asset": "asset.spell.common.02",
             "palette": "palette.sunrise",
+            "flavor": "",
             "description": "Remove a die from this combat."
         },
         {
@@ -214,6 +217,7 @@
             "tags": [ "Ranged" ],
             "asset": "asset.spell.common.03",
             "palette": "palette.sunrise",
+            "flavor": "No shooting back.",
             "description": "Deal 1 damage."
         },
         {
@@ -225,6 +229,7 @@
             "tags": [ "Buff" ],
             "asset": "asset.spell.common.04",
             "palette": "palette.sunrise",
+            "flavor": "",
             "description": "Up to two units gain +1 attack this turn."
         },
         {
@@ -236,6 +241,7 @@
             "tags": [ "Mele", "Buff" ],
             "asset": "asset.spell.common.05",
             "palette": "palette.sunrise",
+            "flavor": "",
             "description": "+2 dice this attack. Up to two untapped units join this attack."
         },
         {
@@ -247,6 +253,7 @@
             "tags": [ "Mele", "Buff" ],
             "asset": "asset.spell.common.06",
             "palette": "palette.sunrise",
+            "flavor": "",
             "description": "Up to three units swap their current attack with defence.\n+3 dice this combat."
         },
         {
@@ -258,6 +265,7 @@
             "tags": [ "Arcane" ],
             "asset": "asset.spell.common.07",
             "palette": "palette.sunrise",
+            "flavor": "",
             "description": "Remove up to 3 dice that rolled 4 or higher."
         },
         {
@@ -269,6 +277,7 @@
             "tags": [ "Buff" ],
             "asset": "asset.spell.common.08",
             "palette": "palette.sunrise",
+            "flavor": "",
             "description": "Whenever a unit would deal combat damage this turn, it deals twice that much damage instead."
         }
 
