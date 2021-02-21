@@ -4,299 +4,389 @@
     },
     "units": [
         {
-            "id": "unit.cat.00",
-            "name": "Cat Warrior",
-            "title": "",
+            "id": "unit.template.00",
+            "name": "Template Unit",
+            "title": ", Lorem Ipsum",
             "rarity": "Common",
-            "cost": [ "Red" ],
-            "tags": [ "Cat", "Warrior" ],
+            "cost": [ "Blue", "Green", "Pink", "Red", "Teal", "Yellow" ],
+            "tags": [ "Template", "Tag" ],
             "asset": "asset.unit.cat.00",
             "palette": "palette.sunrise",
-            "power": 4,
-            "mana": 0,
-            "description": "",
-            "flavor": "Not the sharpest tool int the shed.",
+            "power": 6,
+            "mana": 6,
+            "description": "This is a template unit description.",
+            "flavor": "This is a template unit flavor.",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [ 
                 {
-                    "cardId": "spell.common.00",
-                    "copies": 2,
-                    "groupId": 0
+                    "groupId": 0,
+                    "cardId": "spell.template.00",
+                    "copies": 2
                 }
             ]
         },
         {
-            "id": "unit.cat.01",
-            "name": "Cat Archer",
-            "title": "",
-            "rarity": "Common",
-            "cost": [ "Red" ],
-            "tags": [ "Cat", "Archer" ],
-            "asset": "asset.unit.cat.01",
-            "palette": "palette.breeze",
-            "power": 1,
-            "mana": 0,
-            "description": "When attacking, deal 1 damage to the defender.",
-            "flavor": "Does pif and paf.",
-            "cardGroupSelection": "Choose 1",
-            "cardGroups": [ 
-                {
-                    "cardId": "spell.common.03",
-                    "copies": 2,
-                    "groupId": 0
-                }
-            ]
-        },
-        {
-            "id": "unit.cat.02",
+            "id": "unit.feline.00",
             "name": "Cat Rogue",
             "title": "",
             "rarity": "Common",
-            "cost": [ "Red", "Any" ],
-            "tags": [ "Cat", "Rogue" ],
-            "asset": "asset.unit.cat.02",
-            "palette": "palette.sunrise",
-            "power": 3,
-            "mana": 0,
-            "description": "When attacking, +1 die.",
-            "flavor": "",
+            "cost": [ "Red", "Yellow"  ],
+            "tags": [ "Feline", "Fighter" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 4,
+            "mana": 1,
+            "description": "",
+            "flavor": "Sneaks around and strikes whoever comes too close.",
             "cardGroupSelection": "Choose 1",
-            "cardGroups": [ 
+            "cardGroups": [
                 {
-                    "cardId": "spell.common.00",
-                    "copies": 2,
-                    "groupId": 0
-                },
-                {
-                    "cardId": "spell.common.04",
-                    "copies": 2,
-                    "groupId": 1
+                    "groupId": 0,
+                    "cardId": "spell.fighter.00",
+                    "copies": 2
                 }
             ]
         },
         {
-            "id": "unit.cat.03",
-            "name": "Bondo",
-            "title": ", Captain of the 5th Guard Unit",
-            "rarity": "Uncommon",
-            "cost": [ "Red", "Red" ],
-            "tags": [ "Cat", "Warrior" ],
-            "asset": "asset.unit.cat.03",
-            "palette": "palette.sunrise",
-            "power": 3,
-            "mana": 0,
-            "description": "When attacking, +2 die.",
-            "flavor": "",
-            "cardGroupSelection": "Choose 1",
-            "cardGroups": [ 
-                {
-                    "cardId": "spell.common.05",
-                    "copies": 2,
-                    "groupId": 0
-                }
-            ]
-        },
-        {
-            "id": "unit.cat.04",
-            "name": "Poro",
-            "title": ", Grandmaster of Fat Cats",
-            "rarity": "Rare",
-            "cost": [ "Yellow", "Teal" ],
-            "tags": [ "Cat", "Guard" ],
-            "asset": "asset.unit.cat.04",
-            "palette": "palette.sunrise",
-            "power": 3,
-            "mana": 0,
-            "description": "On untap, all guards gain +1 defence this turn.\nWhen defending, remove all enemy dice that rolled 6.",
-            "flavor": "",
-            "cardGroupSelection": "Choose 1",
-            "cardGroups": [ 
-                {
-                    "cardId": "spell.common.06",
-                    "copies": 2,
-                    "groupId": 0
-                },
-                {
-                    "cardId": "spell.common.02",
-                    "copies": 2,
-                    "groupId": 0
-                },
-                {
-                    "cardId": "spell.common.07",
-                    "copies": 2,
-                    "groupId": 1
-                },
-                {
-                    "cardId": "spell.common.02",
-                    "copies": 2,
-                    "groupId": 1
-                }
-            ]
-        },
-        {
-            "id": "unit.cat.05",
-            "name": "Cat Guardian",
+            "id": "unit.bos.00",
+            "name": "Goat Maruder",
             "title": "",
             "rarity": "Common",
-            "cost": [ "Red" ],
-            "tags": [ "Cat", "Guard" ],
-            "asset": "asset.unit.cat.05",
-            "palette": "palette.sunrise",
-            "power": 1,
-            "mana": 0,
+            "cost": [ "Green", "Pink" ],
+            "tags": [ "Bos", "Fighter" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 4,
+            "mana": 1,
             "description": "",
-            "flavor": "Guards the meow.",
+            "flavor": "Steady fighter, never forgetti.",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [
                 {
-                    "cardId": "spell.common.02",
-                    "copies": 2,
-                    "groupId": 0
+                    "groupId": 0,
+                    "cardId": "spell.fighter.01",
+                    "copies": 2
                 }
             ]
         },
         {
-            "id": "unit.cat.06",
-            "name": "Nok",
-            "title": " The Enraged",
-            "rarity": "Rare",
-            "cost": [ "Red", "Red", "Red" ],
-            "tags": [ "Cat", "Guard" ],
-            "asset": "asset.unit.cat.06",
-            "palette": "palette.sunrise",
-            "power": 1,
+            "id": "unit.reptilia.00",
+            "name": "Snake Assassin",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Blue", "Red" ],
+            "tags": [ "Reptilia", "Fighter" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 5,
             "mana": 0,
             "description": "",
-            "flavor": "Big cat, big paw.",
+            "flavor": "Sneaky snake sneaks around.",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [
                 {
-                    "cardId": "spell.common.02",
-                    "copies": 2,
-                    "groupId": 0
+                    "groupId": 0,
+                    "cardId": "spell.fighter.02",
+                    "copies": 2
+                }
+            ]
+        },
+        {
+            "id": "unit.avem.00",
+            "name": "Eagle Hunter",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Pink", "Teal" ],
+            "tags": [ "Avem", "Fighter" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 4,
+            "mana": 1,
+            "description": "",
+            "flavor": "This sir dives alot.",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "groupId": 0,
+                    "cardId": "spell.fighter.03",
+                    "copies": 2
+                }
+            ]
+        },
+        {
+            "id": "unit.silva.00",
+            "name": "Deer Soldier",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Green", "Teal" ],
+            "tags": [ "Silva", "Fighter" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 3,
+            "mana": 1,
+            "description": "+1 combat die when attacking for the first time this turn.",
+            "flavor": "Always prepared for the adventure.",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "groupId": 0,
+                    "cardId": "spell.fighter.04",
+                    "copies": 2
+                }
+            ]
+        },
+        {
+            "id": "unit.canny.00",
+            "name": "Wolf Trooper",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Blue", "Yellow" ],
+            "tags": [ "Canny", "Fighter" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 5,
+            "mana": 0,
+            "description": "",
+            "flavor": "Big bad wolf.",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "groupId": 0,
+                    "cardId": "spell.fighter.05",
+                    "copies": 2
+                }
+            ]
+        },
+        {
+            "id": "unit.feline.01",
+            "name": "Tiger Blade",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Red", "Teal" ],
+            "tags": [ "Feline", "Fighter" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 4,
+            "mana": 0,
+            "description": "You may reroll a combat die after combat roll.",
+            "flavor": "Changing their plans in split seconds.",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "groupId": 0,
+                    "cardId": "spell.fighter.04",
+                    "copies": 2
+                }
+            ]
+        },
+        {
+            "id": "unit.bos.01",
+            "name": "Ram Berserker",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Pink", "Teal" ],
+            "tags": [ "Bos", "Fighter" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 5,
+            "mana": 0,
+            "description": "",
+            "flavor": "Giant brute with horns, what's here to not be afraid of?",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "groupId": 0,
+                    "cardId": "spell.fighter.05",
+                    "copies": 2
+                }
+            ]
+        },
+        {
+            "id": "unit.reptilia.01",
+            "name": "Lizard Guardian",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Blue", "Pink" ],
+            "tags": [ "Reptilia", "Fighter" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 5,
+            "mana": 0,
+            "description": "Tap this unity before enemy combat damage resolves to prevent 1 damage.",
+            "flavor": "",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "groupId": 0,
+                    "cardId": "spell.fighter.00",
+                    "copies": 2
+                }
+            ]
+        },
+        {
+            "id": "unit.avem.01",
+            "name": "Hawk Archer",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Teal", "Yellow" ],
+            "tags": [ "Avem", "Archer" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 0,
+            "mana": 1,
+            "description": "Charge 5 (remove any number of combat dice with total power of 5 or more) - Deal 1 damage.",
+            "flavor": "",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "groupId": 0,
+                    "cardId": "spell.fighter.05",
+                    "copies": 2
+                }
+            ]
+        },
+        {
+            "id": "unit.silva.01",
+            "name": "Rabbit Warrior",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Green", "Pink" ],
+            "tags": [ "Silva", "Fighter" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 5,
+            "mana": 0,
+            "description": "",
+            "flavor": "Deadlier than it looks.",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "groupId": 0,
+                    "cardId": "spell.fighter.03",
+                    "copies": 2
+                }
+            ]
+        },
+        {
+            "id": "unit.canny.01",
+            "name": "Fox Trapper",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Red", "Yellow" ],
+            "tags": [ "Canny", "Fighter" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 4,
+            "mana": 1,
+            "description": "",
+            "flavor": "Swift and silent.",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "groupId": 0,
+                    "cardId": "spell.fighter.02",
+                    "copies": 2
                 }
             ]
         }
     ],
     "spells": [
         {
-            "id": "spell.common.00",
-            "name": "Strike",
+            "id": "spell.template.00",
+            "name": "Template Spell",
             "rarity": "Common",
-            "speed": "Attack",
-            "manaCost": 1,
-            "additionalCost": [],
-            "tags": [ "Mele" ],
+            "manaCost": 6,
+            "additionalCost": [ "Red", "Green", "Blue" ],
+            "tags": [ "Template", "Tag" ],
             "asset": "asset.spell.common.00",
             "palette": "palette.sunrise",
-            "flavor": "",
-            "description": "+2 dice this attack."
+            "description": "This is a template spell description.",
+            "flavor": "This is a template spell flavor."
         },
         {
-            "id": "spell.common.01",
-            "name": "Burst",
+            "id": "spell.fighter.00",
+            "name": "Chasing the Prey",
             "rarity": "Common",
-            "speed": "Attack",
             "manaCost": 1,
             "additionalCost": [],
-            "tags": [ "Mele" ],
-            "asset": "asset.spell.common.01",
+            "tags": [ "Mele", "Power", "Speed" ],
+            "asset": "asset.spell.common.00",
             "palette": "palette.sunrise",
-            "flavor": "",
-            "description": "+3 dice this attack. Draw a card."
+            "description": "+2 combat dice.\vDraw a card.",
+            "flavor": ""
         },
         {
-            "id": "spell.common.02",
-            "name": "Hex",
+            "id": "spell.fighter.01",
+            "name": "Enrage",
             "rarity": "Common",
-            "speed": "Combat",
-            "manaCost": 1,
+            "manaCost": 0,
             "additionalCost": [],
-            "tags": [ "Arcane" ],
-            "asset": "asset.spell.common.02",
+            "tags": [ "Mele", "Power" ],
+            "asset": "asset.spell.common.00",
             "palette": "palette.sunrise",
-            "flavor": "",
-            "description": "Remove a die from this combat."
+            "description": "+2 combat dice.",
+            "flavor": "Savage tactics, yet so effective."
         },
         {
-            "id": "spell.common.03",
-            "name": "Piercing Shot",
+            "id": "spell.fighter.02",
+            "name": "Sneak Upon",
             "rarity": "Common",
-            "speed": "Sorcery",
-            "manaCost": 1,
+            "manaCost": 0,
             "additionalCost": [],
-            "tags": [ "Ranged" ],
-            "asset": "asset.spell.common.03",
+            "tags": [ "Mele", "Power", "Speed" ],
+            "asset": "asset.spell.common.00",
             "palette": "palette.sunrise",
-            "flavor": "No shooting back.",
-            "description": "Deal 1 damage."
+            "description": "+1 combat dice.\vDraw, then discard a card.",
+            "flavor": ""
         },
         {
-            "id": "spell.common.04",
-            "name": "Battle Roar",
+            "id": "spell.fighter.03",
+            "name": "Careful Engage",
             "rarity": "Common",
-            "speed": "Sorcery",
-            "manaCost": 1,
+            "manaCost": 0,
             "additionalCost": [],
-            "tags": [ "Buff" ],
-            "asset": "asset.spell.common.04",
+            "tags": [ "Mele", "Power", "Vision" ],
+            "asset": "asset.spell.common.00",
             "palette": "palette.sunrise",
-            "flavor": "",
-            "description": "Up to two units gain +1 attack this turn."
+            "description": "+1 combat dice.\vScry 1.",
+            "flavor": ""
         },
         {
-            "id": "spell.common.05",
-            "name": "Ferocious Charge",
-            "rarity": "Uncommon",
-            "speed": "Attack",
-            "manaCost": 1,
-            "additionalCost": [ "Red" ],
-            "tags": [ "Mele", "Buff" ],
-            "asset": "asset.spell.common.05",
-            "palette": "palette.sunrise",
-            "flavor": "",
-            "description": "+2 dice this attack. Up to two untapped units join this attack."
-        },
-        {
-            "id": "spell.common.06",
-            "name": "Backline to Arms",
-            "rarity": "Uncommon",
-            "speed": "Combat",
-            "manaCost": 1,
-            "additionalCost": [ "Red" ],
-            "tags": [ "Mele", "Buff" ],
-            "asset": "asset.spell.common.06",
-            "palette": "palette.sunrise",
-            "flavor": "",
-            "description": "Up to three units swap their current attack with defence.\n+3 dice this combat."
-        },
-        {
-            "id": "spell.common.07",
-            "name": "Greater Barrier",
-            "rarity": "Uncommon",
-            "speed": "Defence",
-            "manaCost": 1,
+            "id": "spell.fighter.04",
+            "name": "Plan B",
+            "rarity": "Common",
+            "manaCost": 0,
             "additionalCost": [],
-            "tags": [ "Arcane" ],
-            "asset": "asset.spell.common.07",
+            "tags": [ "Mele", "Agility" ],
+            "asset": "asset.spell.common.00",
             "palette": "palette.sunrise",
-            "flavor": "",
-            "description": "Remove up to 3 dice that rolled 4 or higher."
+            "description": "Cast after rolling for combat.\vReroll up to two combat dice.",
+            "flavor": ""
         },
         {
-            "id": "spell.common.08",
-            "name": "Amok",
-            "rarity": "Rare",
-            "speed": "Sorcery",
-            "manaCost": 1,
-            "additionalCost": [ "Red" ],
-            "tags": [ "Buff" ],
-            "asset": "asset.spell.common.08",
+            "id": "spell.fighter.05",
+            "name": "Blood Lust",
+            "rarity": "Common",
+            "manaCost": 0,
+            "additionalCost": [],
+            "tags": [ "Mele", "Stamina" ],
+            "asset": "asset.spell.common.00",
             "palette": "palette.sunrise",
-            "flavor": "",
-            "description": "Whenever a unit would deal combat damage this turn, it deals twice that much damage instead."
+            "description": "Cast at the end of combat.\vUntap an ally unit if it has dealt damage this combat.",
+            "flavor": ""
+        },
+        {
+            "id": "spell.fighter.06",
+            "name": "Critical Strike",
+            "rarity": "Common",
+            "manaCost": 0,
+            "additionalCost": [],
+            "tags": [ "Mele", "Strike" ],
+            "asset": "asset.spell.common.00",
+            "palette": "palette.sunrise",
+            "description": "Cast at the end of combat.\vDeal 1 damage if one or more units have dealt damage on a roll of 1 this combat.",
+            "flavor": ""
         }
-
     ],
     "palettes": [
         {
@@ -392,8 +482,34 @@
         "asset.spell.common.07": "units/TemplateUnit.png",
         "asset.spell.common.08": "units/TemplateUnit.png"
 
-    },
-    "ideas": [
-        ""
-    ]
+    }
+    /// Colors
+    /// Blue - lizards
+    /// Green - deer (forest)
+    /// Pink - ram (moutain)
+    /// Red - cats
+    /// Teal - birds
+    /// Yellow - wolfs (dogs)
+
+    /// Ideas
+    /// 1. cat rogue [4/1]; (1) +2 combat dice, draw a card.
+    /// 2. goat maruder [4/1]; (0) +2 combat dice.
+    /// 3. snake assasin [5/0]; (0) +1 combat die. Draw then discard a card.
+    /// 4. eagle hunter [4/1]; (0) +1 combat die. Scry 1.
+    /// 5. deer soldier [3/1] +1 combat die when attacking; (0) Cast after rolling combat dice. Reroll up to two combat dice.
+    /// 6. wolf trooper [5/0]; (0) Cast at the end of combat. Untap a unit you control if it has dealt damage this attack.
+
+    /// 7. tiger blade [4/0] You may reroll a combat die during attack; (0) Cast after rolling combat dice. Reroll up to two combat dice.
+    /// 8. ram berserker [5/0]; (0) Cast at the end of combat. If one or more units attacked on a roll of 1 this combat, deal 1 damage.
+    /// 9. lizard guardian [3/1] Tap this unit and prevent 1 damage; (1) +2 combat dice, draw a card.
+    /// 10. hawk sniper [0/1] Deal 1 damage when attacking; (0) Cast at the end of combat. Untap a unit you control if it has dealt damage this attack.
+    /// 11. Rabbit warrior [5/0]; (0) +1 combat die. Scry 1.
+    /// 12. fox trapper [4/1]; (0) +1 combat die. Draw then discard a card.
+
+    /// 13. puma spellsinger [2/3]; (3) Discard a card with mana cost 2 or less. Deal damage equal to the discarded card's mana cost.
+    /// 14. ox warcaller [1/4]; (2) Tap up to two untapped enemy units, they don't untap at the beginning of their owner's turn.
+    /// 15. newt necromancer [0/3] Start with 2/0 skeleton newt; (3) Elect (elect a unit among units tapped for paying the mana cost of this card). Untap elected unit and up to one other untapped unit. Draw a card.
+    /// 16. owl seet [1/4]; (0) Scry 1. You may put the scried card into your hand insted if it's mana cost is equal or greater than 2.
+    /// 17. bear watcher [2/3]; (3) Look at the top 3 cards of your deck, then put them back in any order. Draw a card.
+    /// 18. coyote shaman [2/3]; (2) +1 combat die. Scry 1. Draw a card.
 }
