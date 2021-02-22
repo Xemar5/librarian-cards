@@ -3,7 +3,7 @@
         "assetsPath": "Assets/Sprites/"
     },
     "units": [
-        {
+        { // Template Unit
             "id": "unit.template.00",
             "name": "Template Unit",
             "title": ", Lorem Ipsum",
@@ -25,7 +25,9 @@
                 }
             ]
         },
-        {
+
+        /// Fighters
+        { // Cat Rogue
             "id": "unit.feline.00",
             "name": "Cat Rogue",
             "title": "",
@@ -47,7 +49,7 @@
                 }
             ]
         },
-        {
+        { // Goat Maruder
             "id": "unit.bos.00",
             "name": "Goat Maruder",
             "title": "",
@@ -69,7 +71,7 @@
                 }
             ]
         },
-        {
+        { // Snake Assassin
             "id": "unit.reptilia.00",
             "name": "Snake Assassin",
             "title": "",
@@ -91,7 +93,7 @@
                 }
             ]
         },
-        {
+        { // Eagle Hunter
             "id": "unit.avem.00",
             "name": "Eagle Hunter",
             "title": "",
@@ -113,7 +115,7 @@
                 }
             ]
         },
-        {
+        { // Deer Soldier
             "id": "unit.silva.00",
             "name": "Deer Soldier",
             "title": "",
@@ -135,7 +137,7 @@
                 }
             ]
         },
-        {
+        { // Wolf Trooper
             "id": "unit.canny.00",
             "name": "Wolf Trooper",
             "title": "",
@@ -157,7 +159,7 @@
                 }
             ]
         },
-        {
+        { // Tiger Blade
             "id": "unit.feline.01",
             "name": "Tiger Blade",
             "title": "",
@@ -179,7 +181,7 @@
                 }
             ]
         },
-        {
+        { // Ram Berserker
             "id": "unit.bos.01",
             "name": "Ram Berserker",
             "title": "",
@@ -201,7 +203,7 @@
                 }
             ]
         },
-        {
+        { // Lizard Guardian
             "id": "unit.reptilia.01",
             "name": "Lizard Guardian",
             "title": "",
@@ -223,7 +225,7 @@
                 }
             ]
         },
-        {
+        { // Hawk Archer
             "id": "unit.avem.01",
             "name": "Hawk Archer",
             "title": "",
@@ -234,7 +236,7 @@
             "palette": "palette.breeze",
             "power": 0,
             "mana": 1,
-            "description": "Charge 5 (remove any number of combat dice with total power of 5 or more) - Deal 1 damage.",
+            "description": "Charge 5 (During combat assignment, you may assign any number of combat dice with total power of 5 or more instead of standard assignment).",
             "flavor": "",
             "cardGroupSelection": "Choose 1",
             "cardGroups": [
@@ -245,7 +247,7 @@
                 }
             ]
         },
-        {
+        { // Rabbit Warrior
             "id": "unit.silva.01",
             "name": "Rabbit Warrior",
             "title": "",
@@ -267,7 +269,7 @@
                 }
             ]
         },
-        {
+        { // Fox Trapper
             "id": "unit.canny.01",
             "name": "Fox Trapper",
             "title": "",
@@ -288,10 +290,66 @@
                     "copies": 2
                 }
             ]
+        },
+
+        /// Casters
+        { // Puma Spellsinger
+            "id": "unit.feline.02",
+            "name": "Puma Spellsinger",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Red", "Teal" ],
+            "tags": [ "Feline", "Caster" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 2,
+            "mana": 3,
+            "description": "",
+            "flavor": "Casting spells is a mellody.",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "groupId": 0,
+                    "cardId": "spell.caster.00",
+                    "copies": 2
+                },
+                {
+                    "groupId": 1,
+                    "cardId": "spell.caster.01",
+                    "copies": 2
+                }
+            ]
+        },
+        { // Ox Warcaller
+            "id": "unit.bos.02",
+            "name": "Ox Enhanter",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Pink", "Yellow" ],
+            "tags": [ "Bos", "Caster" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 5,
+            "mana": 0,
+            "description": "",
+            "flavor": "Preventing invasions since the great war.",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "groupId": 0,
+                    "cardId": "spell.caster.02",
+                    "copies": 2
+                },
+                {
+                    "groupId": 1,
+                    "cardId": "spell.caster.03",
+                    "copies": 2
+                }
+            ]
         }
     ],
     "spells": [
-        {
+        { // Template Spell
             "id": "spell.template.00",
             "name": "Template Spell",
             "rarity": "Common",
@@ -303,7 +361,9 @@
             "description": "This is a template spell description.",
             "flavor": "This is a template spell flavor."
         },
-        {
+
+        /// Fighters
+        { // 00. Chasing the Prey
             "id": "spell.fighter.00",
             "name": "Chasing the Prey",
             "rarity": "Common",
@@ -315,7 +375,7 @@
             "description": "+2 combat dice.\vDraw a card.",
             "flavor": ""
         },
-        {
+        { // 01. Enrage
             "id": "spell.fighter.01",
             "name": "Enrage",
             "rarity": "Common",
@@ -327,7 +387,7 @@
             "description": "+2 combat dice.",
             "flavor": "Savage tactics, yet so effective."
         },
-        {
+        { // 02. Sneak Upon
             "id": "spell.fighter.02",
             "name": "Sneak Upon",
             "rarity": "Common",
@@ -339,7 +399,7 @@
             "description": "+1 combat dice.\vDraw, then discard a card.",
             "flavor": ""
         },
-        {
+        { // 03. Careful Engage
             "id": "spell.fighter.03",
             "name": "Careful Engage",
             "rarity": "Common",
@@ -351,7 +411,7 @@
             "description": "+1 combat dice.\vScry 1.",
             "flavor": ""
         },
-        {
+        { // 04. Plan B
             "id": "spell.fighter.04",
             "name": "Plan B",
             "rarity": "Common",
@@ -363,7 +423,7 @@
             "description": "Cast after rolling for combat.\vReroll up to two combat dice.",
             "flavor": ""
         },
-        {
+        { // 05. Blood Lust
             "id": "spell.fighter.05",
             "name": "Blood Lust",
             "rarity": "Common",
@@ -375,7 +435,7 @@
             "description": "Cast at the end of combat.\vUntap an ally unit if it has dealt damage this combat.",
             "flavor": ""
         },
-        {
+        { // 06. Critical Strike
             "id": "spell.fighter.06",
             "name": "Critical Strike",
             "rarity": "Common",
@@ -385,6 +445,56 @@
             "asset": "asset.spell.common.00",
             "palette": "palette.sunrise",
             "description": "Cast at the end of combat.\vDeal 1 damage if one or more units have dealt damage on a roll of 1 this combat.",
+            "flavor": ""
+        },
+        
+        /// Casters
+        { // 00. Spellburn
+            "id": "spell.caster.00",
+            "name": "Spellburn",
+            "rarity": "Common",
+            "manaCost": 3,
+            "additionalCost": [],
+            "tags": [ "Magic", "Strike" ],
+            "asset": "asset.spell.common.00",
+            "palette": "palette.sunrise",
+            "description": "Discard a card with mana cost 2 or less. Deal damage equal to the discarded card's mana cost.",
+            "flavor": ""
+        },
+        { // 01. Lightning Bolt
+            "id": "spell.caster.01",
+            "name": "Lightning Bolt",
+            "rarity": "Common",
+            "manaCost": 3,
+            "additionalCost": [],
+            "tags": [ "Magic", "Strike" ],
+            "asset": "asset.spell.common.00",
+            "palette": "palette.sunrise",
+            "description": "Cast during combat assignment.\vElect 1. Elected unit joins combat and gains Charge 8 until end of turn.",
+            "flavor": ""
+        },
+        { // 02. Irondust Prison
+            "id": "spell.caster.02",
+            "name": "Irondust Prison",
+            "rarity": "Common",
+            "manaCost": 2,
+            "additionalCost": [],
+            "tags": [ "Magic", "Enchantment" ],
+            "asset": "asset.spell.common.00",
+            "palette": "palette.sunrise",
+            "description": "Up to two enemy units don't untap at the beginning of their owner's next turn",
+            "flavor": ""
+        },
+        { // 03. Fireblast
+            "id": "spell.caster.03",
+            "name": "Fireblast",
+            "rarity": "Common",
+            "manaCost": 2,
+            "additionalCost": [],
+            "tags": [ "Magic", "Strike" ],
+            "asset": "asset.spell.common.00",
+            "palette": "palette.sunrise",
+            "description": "Elect 1. Elected unit gains Charge 6 until end of turn. Untap elected unit",
             "flavor": ""
         }
     ],
@@ -484,12 +594,12 @@
 
     }
     /// Colors
-    /// Blue - lizards
-    /// Green - deer (forest)
-    /// Pink - ram (moutain)
-    /// Red - cats
-    /// Teal - birds
-    /// Yellow - wolfs (dogs)
+    /// Blue - lizards - reptilia
+    /// Green - deer (forest) - silva
+    /// Pink - ram (moutain) - bos
+    /// Red - cats - feline
+    /// Teal - birds - avem
+    /// Yellow - wolfs (dogs) - canny
 
     /// Ideas
     /// 1. cat rogue [4/1]; (1) +2 combat dice, draw a card.
