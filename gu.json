@@ -27,8 +27,8 @@
         },
 
         /// Fighters
-        { // Cat Rogue
-            "id": "unit.feline.00",
+        { // 00. Cat Rogue
+            "id": "unit.fighter.00",
             "name": "Cat Rogue",
             "title": "",
             "rarity": "Common",
@@ -49,8 +49,8 @@
                 }
             ]
         },
-        { // Goat Maruder
-            "id": "unit.bos.00",
+        { // 01. Goat Maruder
+            "id": "unit.fighter.01",
             "name": "Goat Maruder",
             "title": "",
             "rarity": "Common",
@@ -71,8 +71,8 @@
                 }
             ]
         },
-        { // Snake Assassin
-            "id": "unit.reptilia.00",
+        { // 02. Snake Assassin
+            "id": "unit.fighter.02",
             "name": "Snake Assassin",
             "title": "",
             "rarity": "Common",
@@ -93,8 +93,8 @@
                 }
             ]
         },
-        { // Eagle Hunter
-            "id": "unit.avem.00",
+        { // 03. Eagle Hunter
+            "id": "unit.fighter.03",
             "name": "Eagle Hunter",
             "title": "",
             "rarity": "Common",
@@ -115,8 +115,8 @@
                 }
             ]
         },
-        { // Deer Soldier
-            "id": "unit.silva.00",
+        { // 04. Deer Soldier
+            "id": "unit.fighter.04",
             "name": "Deer Soldier",
             "title": "",
             "rarity": "Common",
@@ -137,8 +137,8 @@
                 }
             ]
         },
-        { // Wolf Trooper
-            "id": "unit.canny.00",
+        { // 05. Wolf Trooper
+            "id": "unit.fighter.05",
             "name": "Wolf Trooper",
             "title": "",
             "rarity": "Common",
@@ -159,8 +159,8 @@
                 }
             ]
         },
-        { // Tiger Blade
-            "id": "unit.feline.01",
+        { // 06. Tiger Blade
+            "id": "unit.fighter.06",
             "name": "Tiger Blade",
             "title": "",
             "rarity": "Common",
@@ -181,8 +181,8 @@
                 }
             ]
         },
-        { // Ram Berserker
-            "id": "unit.bos.01",
+        { // 07. Ram Berserker
+            "id": "unit.fighter.07",
             "name": "Ram Berserker",
             "title": "",
             "rarity": "Common",
@@ -203,8 +203,8 @@
                 }
             ]
         },
-        { // Lizard Guardian
-            "id": "unit.reptilia.01",
+        { // 08. Lizard Guardian
+            "id": "unit.fighter.08",
             "name": "Lizard Guardian",
             "title": "",
             "rarity": "Common",
@@ -225,8 +225,8 @@
                 }
             ]
         },
-        { // Hawk Archer
-            "id": "unit.avem.01",
+        { // 09. Hawk Archer
+            "id": "unit.fighter.01",
             "name": "Hawk Archer",
             "title": "",
             "rarity": "Common",
@@ -247,8 +247,8 @@
                 }
             ]
         },
-        { // Rabbit Warrior
-            "id": "unit.silva.01",
+        { // 10. Rabbit Warrior
+            "id": "unit.fighter.10",
             "name": "Rabbit Warrior",
             "title": "",
             "rarity": "Common",
@@ -269,8 +269,8 @@
                 }
             ]
         },
-        { // Fox Trapper
-            "id": "unit.canny.01",
+        { // 11. Fox Trapper
+            "id": "unit.fighter.11",
             "name": "Fox Trapper",
             "title": "",
             "rarity": "Common",
@@ -293,8 +293,8 @@
         },
 
         /// Casters
-        { // Puma Spellsinger
-            "id": "unit.feline.02",
+        { // 00. Puma Spellsinger
+            "id": "unit.caster.00",
             "name": "Puma Spellsinger",
             "title": "",
             "rarity": "Common",
@@ -320,17 +320,17 @@
                 }
             ]
         },
-        { // Ox Warcaller
-            "id": "unit.bos.02",
-            "name": "Ox Enhanter",
+        { // 01. Ox Enchanter
+            "id": "unit.caster.01",
+            "name": "Ox Enchanter",
             "title": "",
             "rarity": "Common",
             "cost": [ "Pink", "Yellow" ],
             "tags": [ "Bos", "Caster" ],
             "asset": "asset.unit.cat.00",
             "palette": "palette.breeze",
-            "power": 5,
-            "mana": 0,
+            "power": 1,
+            "mana": 4,
             "description": "",
             "flavor": "Preventing invasions since the great war.",
             "cardGroupSelection": "Choose 1",
@@ -343,6 +343,114 @@
                 {
                     "groupId": 1,
                     "cardId": "spell.caster.03",
+                    "copies": 2
+                }
+            ]
+        },
+        { // 02. Newt Necromancer
+            "id": "unit.caster.02",
+            "name": "Newt Necromancer",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Blue", "Green" ],
+            "tags": [ "Reptilia", "Caster" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 0,
+            "mana": 0,
+            "description": "Start with 2/0 Skeleton Newt.",
+            "flavor": "Never alone.",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "groupId": 0,
+                    "cardId": "spell.caster.04",
+                    "copies": 2
+                },
+                {
+                    "groupId": 1,
+                    "cardId": "spell.caster.03",
+                    "copies": 2
+                }
+            ]
+        },
+        { // 03. Owl Seer
+            "id": "unit.caster.03",
+            "name": "Owl Seer",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Teal", "Yellow" ],
+            "tags": [ "Avem", "Caster" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 1,
+            "mana": 4,
+            "description": "",
+            "flavor": "",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "groupId": 0,
+                    "cardId": "spell.caster.01",
+                    "copies": 2
+                },
+                {
+                    "groupId": 0,
+                    "cardId": "spell.caster.05",
+                    "copies": 2
+                }
+            ]
+        },
+        { // 04. Bear Watcher
+            "id": "unit.caster.04",
+            "name": "Bear Watcher",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Green", "Red" ],
+            "tags": [ "Silva", "Caster" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 2,
+            "mana": 3,
+            "description": "",
+            "flavor": "",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "groupId": 0,
+                    "cardId": "spell.caster.01",
+                    "copies": 2
+                },
+                {
+                    "groupId": 1,
+                    "cardId": "spell.caster.06",
+                    "copies": 2
+                }
+            ]
+        },
+        { // 05. Bear Watcher
+            "id": "unit.caster.04",
+            "name": "Coyote Shaman",
+            "title": "",
+            "rarity": "Common",
+            "cost": [ "Green", "Red" ],
+            "tags": [ "Silva", "Caster" ],
+            "asset": "asset.unit.cat.00",
+            "palette": "palette.breeze",
+            "power": 2,
+            "mana": 3,
+            "description": "",
+            "flavor": "",
+            "cardGroupSelection": "Choose 1",
+            "cardGroups": [
+                {
+                    "groupId": 0,
+                    "cardId": "spell.caster.03",
+                    "copies": 2
+                },
+                {
+                    "groupId": 1,
+                    "cardId": "spell.caster.07",
                     "copies": 2
                 }
             ]
@@ -496,6 +604,54 @@
             "palette": "palette.sunrise",
             "description": "Elect 1. Elected unit gains Charge 6 until end of turn. Untap elected unit",
             "flavor": ""
+        },
+        { // 04. Revitalize
+            "id": "spell.caster.04",
+            "name": "Revitalize",
+            "rarity": "Common",
+            "manaCost": 2,
+            "additionalCost": [],
+            "tags": [ "Magic", "Speed" ],
+            "asset": "asset.spell.common.00",
+            "palette": "palette.sunrise",
+            "description": "Elect 1. Untap elected unit and one other tapped unit. Draw a card.",
+            "flavor": ""
+        },
+        { // 05. Near Future Foresight
+            "id": "spell.caster.05",
+            "name": "Near Future Foresight",
+            "rarity": "Common",
+            "manaCost": 0,
+            "additionalCost": [],
+            "tags": [ "Magic", "Speed" ],
+            "asset": "asset.spell.common.00",
+            "palette": "palette.sunrise",
+            "description": "Scry 1. You may put the scried card into your hand if it's mana cost is greater or equal to 2.",
+            "flavor": ""
+        },
+        { // 06. Vision
+            "id": "spell.caster.06",
+            "name": "Vision",
+            "rarity": "Common",
+            "manaCost": 5,
+            "additionalCost": [],
+            "tags": [ "Magic", "Speed" ],
+            "asset": "asset.spell.common.00",
+            "palette": "palette.sunrise",
+            "description": "Look at the top 5 cards of your deck, then put them back in any order.\vDraw two cards.",
+            "flavor": ""
+        },
+        { // 07. Enchanting Dance
+            "id": "spell.caster.07",
+            "name": "Enchanting Dance",
+            "rarity": "Common",
+            "manaCost": 5,
+            "additionalCost": [],
+            "tags": [ "Magic", "Power", "Speed" ],
+            "asset": "asset.spell.common.00",
+            "palette": "palette.sunrise",
+            "description": "+1 combat die.\vScry 1.\vDraw a card.",
+            "flavor": ""
         }
     ],
     "palettes": [
@@ -595,7 +751,7 @@
     }
     /// Colors
     /// Blue - lizards - reptilia
-    /// Green - deer (forest) - silva
+    /// Green - deer (forest) - Look at the top 3 cards of your deck, then put them back in any order. Draw a card.
     /// Pink - ram (moutain) - bos
     /// Red - cats - feline
     /// Teal - birds - avem
@@ -619,7 +775,7 @@
     /// 13. puma spellsinger [2/3]; (3) Discard a card with mana cost 2 or less. Deal damage equal to the discarded card's mana cost.
     /// 14. ox warcaller [1/4]; (2) Tap up to two untapped enemy units, they don't untap at the beginning of their owner's turn.
     /// 15. newt necromancer [0/3] Start with 2/0 skeleton newt; (3) Elect (elect a unit among units tapped for paying the mana cost of this card). Untap elected unit and up to one other untapped unit. Draw a card.
-    /// 16. owl seet [1/4]; (0) Scry 1. You may put the scried card into your hand insted if it's mana cost is equal or greater than 2.
+    /// 16. owl seer [1/4]; (0) Scry 1. You may put the scried card into your hand insted if it's mana cost is equal or greater than 2.
     /// 17. bear watcher [2/3]; (3) Look at the top 3 cards of your deck, then put them back in any order. Draw a card.
     /// 18. coyote shaman [2/3]; (2) +1 combat die. Scry 1. Draw a card.
 }
