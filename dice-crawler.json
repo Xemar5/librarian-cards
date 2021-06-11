@@ -1,0 +1,112 @@
+{
+    "settings":{},
+    "units":[
+        {
+            "id":"unit.common.kando",
+            "name":"Kando",
+            "tag":"Unit",
+            "leveling":true,
+            "foreground":"",
+            "frame":"",
+            "abilities":[
+                {
+                    "cost":["5"],
+                    "description":"Reroll up to 1 die."
+                },
+                {
+                    "cost":["5","5"],
+                    "description":"Reroll up to 1 die.<br>Deal 1 damage."
+                },
+                {
+                    "cost":["5","5","5"],
+                    "description":"Deal 3 damage.<br>Reroll any number of dice."
+                }
+            ],
+            "inventory":[
+                "item.owned.kando.graycoppersword",
+                "action.owned.kando.focus"
+            ]
+        }
+        // {
+        //     "name":"Warcry Warrior",
+        //     "abilities":[
+        //         {
+        //             "cost":["R","R"],
+        //             "descriptions":["Deal 1 damage."]
+        //         },
+        //         {
+        //             "cost":["R","R","G"],
+        //             "descriptions":["Deal 1 damage. Another unit gains 1 power until end of turn."]
+        //         },
+        //         {
+        //             "cost":["R","G","G"],
+        //             "descriptions":["Deal 1 damage. Gain 1 power counter."]
+        //         }
+        //     ]
+        // },
+        // {
+        //     "name":"Partner in Crime",
+        //     "abilities":[
+        //         {
+        //             "cost":["Y","R"],
+        //             "descriptions":["Deal 1 damage or Recharge."]
+        //         },
+        //         {
+        //             "cost":["Y","Y","Y"],
+        //             "descriptions":["You may discharge another unit, if you do, deal 4 damage."]
+        //         }
+        //     ]
+        // },
+        // {
+        //     "name":"Patient Monk",
+        //     "abilities":[
+        //         {
+        //             "cost":["U","Y"],
+        //             "descriptions":["<i>Begin deep meditation.</i>"]
+        //         },
+        //         {
+        //             "cost":["U","Y"],
+        //             "descriptions":["Gain a power counter."]
+        //         },
+        //         {
+        //             "cost":["U","Y"],
+        //             "descriptions":["Deal 2 damage."]
+        //         }
+        //     ]
+        // },
+        // {
+        //     "name":"Cursed Paladin",
+        //     "abilities":[
+        //         {
+        //             "cost":["P","P"],
+        //             "descriptions":["An enemy loses 1 power next round."]
+        //         },
+        //         {
+        //             "cost":["P","Y"],
+        //             "descriptions":["Another unit gains 1 life."]
+        //         },
+        //         {
+        //             "cost":["P","P","Y"],
+        //             "descriptions":["Deal 2 damage, then deal 2 damage to an undead."]
+        //         }
+        //     ]
+        // },
+        // {
+        //     "name":"Mud Mage Apprentice",
+        //     "abilities":[
+        //         {
+        //             "cost":["B","U"],
+        //             "descriptions":["Set any collor of a Brown die."]
+        //         },
+        //         {
+        //             "cost":["B","P"],
+        //             "descriptions":["Deal 1 damage."]
+        //         },
+        //         {
+        //             "cost":["B","B","P","P"],
+        //             "descriptions":["Deal 2 damage, then remove a die with the same color as the attacked unit."]
+        //         }
+        //     ]
+        // }
+    ]
+}
