@@ -1,4 +1,49 @@
 -- Data section of the mod
+local palettes = {
+    unit = {
+        name = "#82CAF6",
+        tag = "#CFEBFC",
+        level = "#D9E4CF",
+    },
+    action = {
+        name = "#E5898C",
+        tag = "#F5D2D3",
+        level = "#D9E4CF",
+    },
+    item = {
+        name = "#E5C367",
+        tag = "#F5E8C5",
+        level = "#D9E4CF",
+    },
+}
+
+local images = {
+    common = {
+        background = "",
+        nameBackground = "Sprites/Name Background.png",
+        nameFrame = "Sprites/Name Frame.png",
+        tagBackground = "Sprites/Tag Background.png",
+        tagFrame = "Sprites/Tag Frame.png",
+        border = "Sprites/Border.png",
+        levelBackground = "Sprites/Diamond Background.png",
+        levelBorder = "Sprites/Diamond Background Border.png",
+        separator = "Sprites/Separator.png",
+        frameWithLevel = "Sprites/Ability Frame Level.png",
+        frameWithoutLevel = "Sprites/Ability Frame.png",
+        dice = {
+            d1 = "Sprites/D1.png",
+            d2 = "Sprites/D2.png",
+            d3 = "Sprites/D3.png",
+            d4 = "Sprites/D4.png",
+            d5 = "Sprites/D5.png",
+            d6 = "Sprites/D6.png",
+            dx = "Sprites/DX.png",
+            dy = "Sprites/DY.png",
+            dz = "Sprites/DZ.png",
+        }
+    },
+}
+
 local cards = {
     units = {
         ["units.common.kando"] = {
@@ -7,7 +52,7 @@ local cards = {
             leveling = true,
             foreground = "",
             frame = "",
-            palette = "unit",
+            palette = palettes.unit,
             abilities = {
                 {
                     cost = { "5" },
@@ -33,7 +78,7 @@ local cards = {
             leveling = true,
             foreground = "",
             frame = "",
-            palette = "unit",
+            palette = palettes.unit,
             abilities = {
                 {
                     cost = { "1", "2" },
@@ -55,7 +100,7 @@ local cards = {
             leveling = true,
             foreground = "",
             frame = "",
-            palette = "unit",
+            palette = palettes.unit,
             abilities = {
                 {
                     cost = { "1", "3" },
@@ -73,7 +118,7 @@ local cards = {
             leveling = true,
             foreground = "",
             frame = "",
-            palette = "unit",
+            palette = palettes.unit,
             abilities = {
                 {
                     cost = { "3", "4" },
@@ -95,7 +140,7 @@ local cards = {
             leveling = true,
             foreground = "",
             frame = "",
-            palette = "unit",
+            palette = palettes.unit,
             abilities = {
                 {
                     cost = { "1" },
@@ -119,7 +164,7 @@ local cards = {
             leveling = false,
             foreground = "",
             frame = "",
-            palette = "action",
+            palette = palettes.action,
             abilities = {
                 {
                     cost = {},
@@ -133,7 +178,7 @@ local cards = {
             leveling = false,
             foreground = "",
             frame = "",
-            palette = "action",
+            palette = palettes.action,
             abilities = {
                 {
                     cost = {},
@@ -147,7 +192,7 @@ local cards = {
             leveling = false,
             foreground = "",
             frame = "",
-            palette = "action",
+            palette = palettes.action,
             abilities = {
                 {
                     cost = {},
@@ -161,7 +206,7 @@ local cards = {
             leveling = false,
             foreground = "",
             frame = "",
-            palette = "action",
+            palette = palettes.action,
             abilities = {
                 {
                     cost = {},
@@ -175,7 +220,7 @@ local cards = {
             leveling = false,
             foreground = "",
             frame = "",
-            palette = "action",
+            palette = palettes.action,
             abilities = {
                 {
                     cost = {},
@@ -189,7 +234,7 @@ local cards = {
             leveling = false,
             foreground = "",
             frame = "",
-            palette = "action",
+            palette = palettes.action,
             abilities = {
                 {
                     cost = {},
@@ -201,47 +246,6 @@ local cards = {
     items = {
 
     },
-}
-
-local palettes = {
-    unit = {
-        name = "#82CAF6",
-        tag = "#CFEBFC",
-        level = "#D9E4CF",
-    },
-    action = {
-        name = "#E5898C",
-        tag = "#F5D2D3",
-        level = "#D9E4CF",
-    },
-    item = {
-        name = "#E5C367",
-        tag = "#F5E8C5",
-        level = "#D9E4CF",
-    },
-}
-
-local images = {
-    background = "",
-    nameBackground = "Sprites/Name Background.png",
-    nameFrame = "Sprites/Name Frame.png",
-    tagBackground = "Sprites/Tag Background.png",
-    tagFrame = "Sprites/Tag Frame.png",
-    border = "Sprites/Border.png",
-    levelBackground = "Sprites/Diamond Background.png",
-    levelBorder = "Sprites/Diamond Background Border.png",
-    separator = "Sprites/Separator.png",
-    frameWithLevel = "Sprites/Ability Frame Level.png",
-    frameWithoutLevel = "Sprites/Ability Frame.png",
-    d1 = "Sprites/D1.png",
-    d2 = "Sprites/D2.png",
-    d3 = "Sprites/D3.png",
-    d4 = "Sprites/D4.png",
-    d5 = "Sprites/D5.png",
-    d6 = "Sprites/D6.png",
-    dx = "Sprites/DX.png",
-    dy = "Sprites/DY.png",
-    dz = "Sprites/DZ.png",
 }
 
 local styles = {
@@ -428,7 +432,7 @@ local layoutElements = {
 local generator = {
     addBackground = function(parent)
         local obj = lb.addObject("background", parent)
-        lb.setImage(obj, images.background)
+        lb.setImage(obj, images.common.background)
         lb.setSize(obj, 231.4, 331.3)
         return obj
     end,
@@ -442,7 +446,7 @@ local generator = {
 
     addNameBackground = function(parent, palette)
         local obj = lb.addObject("nameBackground", parent)
-        lb.setImage(obj, images.nameBackground, palette.name)
+        lb.setImage(obj, images.common.nameBackground, palette.name)
         lb.setPosition(obj, 0.26, -1.3)
         lb.setSize(obj, 172.23, 39.413)
         return obj
@@ -450,7 +454,7 @@ local generator = {
 
     addNameFrame = function(parent)
         local obj = lb.addObject("nameFrame", parent)
-        lb.setImage(obj, images.nameFrame)
+        lb.setImage(obj, images.common.nameFrame)
         lb.setPosition(obj, 1.2, -8.3)
         lb.setSize(obj, 215.784, 60.8)
         lb.setAngle(obj, -0.42)
@@ -473,7 +477,7 @@ local generator = {
 
     addTagBackground = function(parent, palette)
         local obj = lb.addObject("tagBackground", parent)
-        lb.setImage(obj, images.tagBackground, palette.tag)
+        lb.setImage(obj, images.common.tagBackground, palette.tag)
         lb.setPosition(obj, -2.1648, 0)
         lb.setSize(obj, 114.2292, 15.44836)
         lb.setAngle(obj, 0.073)
@@ -482,7 +486,7 @@ local generator = {
 
     addTagFrame = function(parent)
         local obj = lb.addObject("tagFrame", parent)
-        lb.setImage(obj, images.tagFrame)
+        lb.setImage(obj, images.common.tagFrame)
         lb.setPosition(obj, -3, 0)
         lb.setSize(obj, 120.3908, 18.61713)
         lb.setAngle(obj, -0.206)
@@ -507,7 +511,7 @@ local generator = {
 
     addBorder = function(parent)
         local obj = lb.addObject("border", parent)
-        lb.setImage(obj, images.border)
+        lb.setImage(obj, images.common.border)
         lb.setSize(obj, 250, 350)
         return obj
     end,
@@ -537,7 +541,7 @@ local generator = {
 
         addLevelBackground = function(parent, palette)
             local obj = lb.addObject("levelBackground", parent)
-            lb.setImage(obj, images.levelBackground, palette.level)
+            lb.setImage(obj, images.common.levelBackground, palette.level)
             lb.setAnchoredPosition(obj, -15, 1.7)
             lb.setSize(obj, 34.90248, 36.12713)
             lb.setAngle(obj, -1.671)
@@ -546,7 +550,7 @@ local generator = {
 
         addLevelBorder = function(parent, palette)
             local obj = lb.addObject("levelBorder", parent)
-            lb.setImage(obj, images.levelBorder, palette.level)
+            lb.setImage(obj, images.common.levelBorder, palette.level)
             lb.setAnchoredPosition(obj, -15, 1.7)
             lb.setSize(obj, 34.90248, 36.12713)
             lb.setAngle(obj, -1.671)
@@ -575,7 +579,7 @@ local generator = {
 
         addDie = function (parent, index, cost)
             local obj = lb.addObject("die" .. index, parent)
-            lb.setImage(obj, images["d" .. cost])
+            lb.setImage(obj, images.common.dice["d" .. cost])
             lb.setSize(obj, 20.52, 22.23)
             return obj
         end,
@@ -588,7 +592,7 @@ local generator = {
 
         addSeparator = function(parent)
             local obj = lb.addObject("separator", parent)
-            lb.setImage(obj, images.separator)
+            lb.setImage(obj, images.common.separator)
             lb.setSize(obj, 2.044425, 40.8885)
             return obj
         end,
@@ -619,7 +623,7 @@ local generator = {
 
         addFrameWithLevel = function(parent)
             local obj = lb.addObject("frameWithLevel", parent)
-            lb.setImage(obj, images.frameWithLevel)
+            lb.setImage(obj, images.common.frameWithLevel)
             lb.setPosition(obj, -7.4, 0)
             lb.setSize(obj, 200.9105, 61.20042)
             return obj
@@ -627,7 +631,7 @@ local generator = {
 
         addFrameWithoutLevel = function(parent)
             local obj = lb.addObject("frameWithoutLevel", parent)
-            lb.setImage(obj, images.frameWithoutLevel)
+            lb.setImage(obj, images.common.frameWithoutLevel)
             lb.setPosition(obj, 0.51, -0.14734)
             lb.setSize(obj, 186.8911, 60.90576)
             return obj
@@ -638,8 +642,8 @@ local generator = {
             local abilityStack = self.addAbilityStack(abilityParent)
 
             local levelParent = self.addLevel(abilityStack)
-            local levelBackground = self.addLevelBackground(levelParent, palettes[card.palette])
-            local levelBorder = self.addLevelBorder(levelParent, palettes[card.palette])
+            local levelBackground = self.addLevelBackground(levelParent, card.palette)
+            local levelBorder = self.addLevelBorder(levelParent, card.palette)
             local levelText = self.addLevelText(levelParent, level)
 
             local diceParent = self.addDiceParent(abilityStack)
@@ -677,12 +681,12 @@ local generator = {
         local background = self.addBackground(root)
     
         local name = self.addName(root)
-        local nameBackground = self.addNameBackground(name, palettes[card.palette])
+        local nameBackground = self.addNameBackground(name, card.palette)
         local nameFrame = self.addNameFrame(name)
         local nameText = self.addNameText(name, card.name)
     
         local tag = self.addTag(root)
-        local tagBackground = self.addTagBackground(tag, palettes[card.palette])
+        local tagBackground = self.addTagBackground(tag, card.palette)
         local tagFrame = self.addTagFrame(tag)
         local tagText = self.addTagText(tag, card.tag)
     
